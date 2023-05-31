@@ -14,7 +14,6 @@ def signal_handler(sig, frame):
     print('Keyboard interrupt detected, stopping server...')
     sys.exit(0)
 
-
 signal.signal(signal.SIGINT, signal_handler)
 
 # If running as main

@@ -15,7 +15,6 @@ def signal_handler(sig, frame):
     print('Keyboard interrupt detected, stopping server...')
     sys.exit(0)
 
-
 signal.signal(signal.SIGINT, signal_handler)
 
 # If running as main
@@ -72,6 +71,7 @@ if __name__ == '__main__':
         fetched = []
         if menu == 1:
             fetched = db.get_all_data()
+            
         if menu == 2:
             # Query data by topic
             sensor = input("Enter sensor: ")

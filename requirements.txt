@@ -4,3 +4,10 @@ pandas
 db-sqlite3
 numpy
 matplotlib
+
+# Start mosquitto
+# /usr/local/sbin/mosquitto
+
+# Stop mosquitto
+# ps aux | grep mosquitto
+# kill PID

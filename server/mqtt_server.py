@@ -25,6 +25,7 @@ class MQTTServer():
         self.buffer = ''
         self.data_chunks = {}
         self.topics = topics
+        
         self.client = mqtt.Client()
         self.client.connect(self.broker_ip, self.broker_port)
         self.client.on_connect = self.on_connect

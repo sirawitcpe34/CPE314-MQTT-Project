@@ -15,7 +15,7 @@ from logger import Logger
 class MQTTBroker(Logger):
     # method __init__ is called when an object of class MQTTBroker is created
     def __init__(self, broker_ip, broker_port):
-        super().__init__('broker')
+        super().__init__(name='broker')
         self.broker_ip = broker_ip
         self.broker_port = broker_port
 
